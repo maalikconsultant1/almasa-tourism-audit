@@ -4,9 +4,6 @@
     { "source": "/audit", "destination": "/audit.html" },
     { "source": "/golden-visa", "destination": "/golden-visa.html" },
     { "source": "/tours", "destination": "/tours.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/safety-center", "destination": "/safety-center.html" },
     { "source": "/thank-you", "destination": "/thank-you.html" }
   ],
   "cleanUrls": true
