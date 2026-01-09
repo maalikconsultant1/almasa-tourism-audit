@@ -21,25 +21,6 @@
       color: #0f172a;
       line-height: 1.6;
     }
-    .navbar {
-      background: #1e40af;
-      padding: 12px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background 0.2s;
-    }
-    .navbar a:hover {
-      background: rgba(255,255,255,0.15);
-    }
     .hero {
       background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
       color: white;
@@ -49,13 +30,11 @@
     .hero h1 {
       font-size: 2.6rem;
       margin-bottom: 16px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
     .hero p {
       font-size: 1.2rem;
       max-width: 750px;
       margin: 0 auto 30px;
-      opacity: 0.95;
     }
     .cta-buttons {
       display: flex;
@@ -74,24 +53,17 @@
       border-radius: 999px;
       font-size: 1.1rem;
       box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
     }
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(212, 175, 55, 0.4);
     }
     .journey-banner {
       text-align: center;
       padding: 24px;
       background: #f1f5f9;
-      margin: 40px 20px;
+      margin: 40px auto;
       border-radius: 16px;
       max-width: 900px;
-      margin: 40px auto;
-    }
-    .journey-banner h2 {
-      color: #1e40af;
-      margin-bottom: 12px;
     }
     .services {
       display: flex;
@@ -107,15 +79,10 @@
       width: 280px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       text-align: center;
-      transition: transform 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
     }
     .service-card h3 {
       color: #1e40af;
       margin-bottom: 16px;
-      font-size: 1.4rem;
     }
     .footer {
       background: #0f172a;
@@ -127,7 +94,6 @@
     .footer a {
       color: #d4af37;
       text-decoration: none;
-      margin-left: 8px;
     }
     @media (max-width: 600px) {
       .hero h1 { font-size: 2rem; }
@@ -139,13 +105,12 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
-    <a href="/">Home</a>
-    <a href="/tours">Tours</a>
-    <a href="/audit">Compliance</a>
-    <a href="/golden-visa">Residency</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
+  <nav style="background:#1e40af; padding:12px; text-align:center;">
+    <a href="/" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
+    <a href="/tours" style="color:white; margin:0 10px; text-decoration:none;">Tours</a>
+    <a href="/audit" style="color:white; margin:0 10px; text-decoration:none;">Compliance</a>
+    <a href="/golden-visa" style="color:white; margin:0 10px; text-decoration:none;">Residency</a>
+    <a href="/contact" style="color:white; margin:0 10px; text-decoration:none;">Contact</a>
   </nav>
 
   <!-- Hero Section -->
@@ -169,25 +134,24 @@
   <div class="services">
     <div class="service-card">
       <h3>🌴 Luxury Tours</h3>
-      <p>Desert safaris, city tours, coastal getaways across Al-Fujairah, Dubai, Abu Dhabi & all Emirates.</p>
+      <p>Desert safaris, city tours, coastal getaways across all Emirates.</p>
     </div>
     <div class="service-card">
       <h3>🏢 Compliance Audit</h3>
       <p>FTA-reviewed business setup check. Avoid fines. Get your PDF report in 24h via WhatsApp.</p>
-      <a href="/audit" class="btn" style="margin-top:16px; background:#1e40af; color:white;">$49 USDT</a>
+      <a href="/audit" class="btn" style="margin-top:16px; background:#1e40af; color:white; padding:10px 20px; font-size:1rem;">$49 USDT</a>
     </div>
     <div class="service-card">
       <h3>🛂 Golden Visa</h3>
-      <p>Eligibility assessment, document checklist, govt form prep — all in one concierge package.</p>
-      <a href="/golden-visa" class="btn" style="margin-top:16px; background:#1e40af; color:white;">From $299</a>
+      <p>Eligibility assessment, document checklist, govt form prep.</p>
+      <a href="/golden-visa" class="btn" style="margin-top:16px; background:#1e40af; color:white; padding:10px 20px; font-size:1rem;">From $299</a>
     </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
     © 2026 ALMASA Tourism. All rights reserved.<br>
-    WhatsApp: <a href="https://wa.me/923005473874">+92 300 5473874</a> | 
-    <a href="/safety-center">Safety Center</a>
+    WhatsApp: <a href="https://wa.me/923005473874">+92 300 5473874</a>
   </div>
 
 </body>
