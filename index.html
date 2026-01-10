@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover your unique UAE journey with ALMASA Tourism. Experience personalized tours, luxury travel, and local expertise across Al-Fujairah and the Emirates. Plan your adventure today for unforgettable holidays, cultural exploration, and seamless travel services.">
+  <meta name="description" content="Discover your unique UAE journey with ALMASA Tourism. Experience personalized tours, luxury travel, and local expertise across Al-Fujairah and the Emirates.">
   <title>ALMASA Tourism — Crafting Your Bespoke UAE Journey</title>
-  <!-- GA4 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE72W7Q3E3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,63 +21,70 @@
       color: #0f172a;
       line-height: 1.6;
     }
+    .navbar {
+      background: #1e40af;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    .navbar img {
+      vertical-align: middle;
+    }
     .hero {
       background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
     .hero h1 {
-      font-size: 2.6rem;
-      margin-bottom: 16px;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
     }
     .hero p {
-      font-size: 1.2rem;
-      max-width: 750px;
-      margin: 0 auto 30px;
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
     }
     .cta-buttons {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 20px;
+      gap: 20px;
     }
     .btn {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 16px 32px;
       background: #d4af37;
       color: #0f172a;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       border-radius: 999px;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-    .journey-banner {
-      text-align: center;
-      padding: 24px;
-      background: #f1f5f9;
-      margin: 40px auto;
-      border-radius: 16px;
-      max-width: 900px;
+      font-size: 1.2rem;
+      box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
     }
     .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
     .service-card {
       background: white;
       border-radius: 16px;
-      padding: 32px;
+      padding: 36px;
       width: 280px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       text-align: center;
     }
     .service-card h3 {
@@ -88,35 +95,45 @@
       background: #0f172a;
       color: white;
       text-align: center;
-      padding: 24px 20px;
+      padding: 28px 20px;
       font-size: 0.95rem;
+      line-height: 1.6;
     }
     .footer a {
       color: #d4af37;
       text-decoration: none;
     }
     @media (max-width: 600px) {
-      .hero h1 { font-size: 2rem; }
-      .hero p { font-size: 1rem; }
-      .btn { padding: 12px 24px; font-size: 1rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1.1rem; }
+      .btn { padding: 14px 26px; font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav style="background:#1e40af; padding:12px; text-align:center;">
-    <a href="/" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
-    <a href="/tours" style="color:white; margin:0 10px; text-decoration:none;">Tours</a>
-    <a href="/audit" style="color:white; margin:0 10px; text-decoration:none;">Compliance</a>
-    <a href="/golden-visa" style="color:white; margin:0 10px; text-decoration:none;">Residency</a>
-    <a href="/contact" style="color:white; margin:0 10px; text-decoration:none;">Contact</a>
+  <!-- Full Navigation (12 items) -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="ALMASA Tourism" width="150" style="vertical-align:middle;">
+    </a>
+    <a href="/about">About</a>
+    <a href="/why-almasa">Why Almasa</a>
+    <a href="/vip-services">VIP Services</a>
+    <a href="/tours">Tours</a>
+    <a href="/leadership">Leadership</a>
+    <a href="/location">Location</a>
+    <a href="/safety-center">Safety</a>
+    <a href="/contact">Contact</a>
+    <a href="/audit">Compliance</a>
+    <a href="/vat">VAT Guide</a>
+    <a href="/golden-visa">Golden Visa</a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- ✅ YOUR HERO SECTION — PASTED EXACTLY HERE -->
   <div class="hero">
     <h1>Crafting Your Bespoke UAE Journey</h1>
-    <p>From desert safaris to Golden Visa residency — we guide your full UAE experience with local expertise and personalized service.</p>
+    <p>From desert safaris to Golden Visa residency — we guide your full UAE experience.</p>
     <div class="cta-buttons">
       <a href="/tours" class="btn">Plan Your Trip</a>
       <a href="/audit" class="btn">Start Your Business</a>
@@ -124,13 +141,7 @@
     </div>
   </div>
 
-  <!-- Journey Banner -->
-  <div class="journey-banner">
-    <h2>Your UAE Journey, Simplified</h2>
-    <p>Tourist → Freelancer → Business Owner → Golden Visa Resident</p>
-  </div>
-
-  <!-- Services -->
+  <!-- Services Grid -->
   <div class="services">
     <div class="service-card">
       <h3>🌴 Luxury Tours</h3>
@@ -138,20 +149,20 @@
     </div>
     <div class="service-card">
       <h3>🏢 Compliance Audit</h3>
-      <p>FTA-reviewed business setup check. Avoid fines. Get your PDF report in 24h via WhatsApp.</p>
-      <a href="/audit" class="btn" style="margin-top:16px; background:#1e40af; color:white; padding:10px 20px; font-size:1rem;">$49 USDT</a>
+      <p>FTA-reviewed business setup check. Avoid fines. Get your PDF report in 24h.</p>
     </div>
     <div class="service-card">
       <h3>🛂 Golden Visa</h3>
-      <p>Eligibility assessment, document checklist, govt form prep.</p>
-      <a href="/golden-visa" class="btn" style="margin-top:16px; background:#1e40af; color:white; padding:10px 20px; font-size:1rem;">From $299</a>
+      <p>Eligibility assessment, document prep, govt form support.</p>
     </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
     © 2026 ALMASA Tourism. All rights reserved.<br>
-    WhatsApp: <a href="https://wa.me/923005473874">+92 300 5473874</a>
+    📧 Business: <a href="mailto:info@almasatourism.org">info@almasatourism.org</a><br>
+    👨‍💼 CEO (UAE): <a href="https://wa.me/971581238100">+971 58 123 8100</a><br>
+    🧑‍💼 Operations Manager: <a href="https://wa.me/971522080536">+971 52 208 0536</a>
   </div>
 
 </body>
