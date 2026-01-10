@@ -1,9 +1,17 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/audit", "destination": "/audit.html" },
-    { "source": "/golden-visa", "destination": "/golden-visa.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/why-almasa", "destination": "/why-almasa.html" },
+    { "source": "/vip-services", "destination": "/vip-services.html" },
     { "source": "/tours", "destination": "/tours.html" },
+    { "source": "/leadership", "destination": "/leadership.html" },
+    { "source": "/location", "destination": "/location.html" },
+    { "source": "/safety-center", "destination": "/safety-center.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/audit", "destination": "/audit.html" },
+    { "source": "/vat", "destination": "/audit.html" },
+    { "source": "/golden-visa", "destination": "/golden-visa.html" },
     { "source": "/thank-you", "destination": "/thank-you.html" }
   ],
   "cleanUrls": true
