@@ -11,7 +11,7 @@ const nextConfig = {
       // UAE FTA VAT Audit
       {
         source: '/audit',
-        destination: 'https://tally.so/r/ODXpKM'
+        destination: 'https://tally.so/r/ODXpKM',
         permanent: true,
       },
     ];
