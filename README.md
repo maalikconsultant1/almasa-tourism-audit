@@ -6,6 +6,8 @@ A static, zero-dependency omni-agency platform by **Maalik Consultant Plus** (St
 - 📑 **Compliance**: Human-reviewed VAT invoice fixes for **UAE (FTA)** and **KSA (ZATCA)**  
 - 🛂 **Residency**: Golden Visa eligibility checks & application support  
 
+All services are coordinated via our central business WhatsApp: [https://wa.me/923005473874](https://wa.me/923005473874)
+
 Built with pure HTML/CSS, hosted on **GitHub Pages**, and designed for **trust, speed, and WhatsApp-first service delivery**.
 
 ---
