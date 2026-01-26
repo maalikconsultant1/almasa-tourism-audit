@@ -1,51 +1,49 @@
-# ALMASA Tourism – Your Full UAE Journey Partner
+# ALMASA Tourism – Your Full UAE & KSA Journey Partner
 
-A static, zero-dependency omni-agency website for **ALMASA Tourism**, guiding international clients through their complete UAE experience:
+A static, zero-dependency omni-agency platform by **Maalik Consultant Plus** (Strategic Digital Partner of ALMASA Tourism), empowering international clients and regional businesses through:
 
-- 🌴 **Tourism**: Luxury desert safaris, city tours & coastal getaways  
-- 🏢 **Compliance**: FTA business audits, VAT setup, activity code review  
-- 🛂 **Residency**: Golden Visa eligibility & application support  
+- 🌴 **Tourism**: Bespoke UAE travel — luxury desert safaris, city tours & family holidays  
+- 📑 **Compliance**: Human-reviewed VAT invoice fixes for **UAE (FTA)** and **KSA (ZATCA)**  
+- 🛂 **Residency**: Golden Visa eligibility checks & application support  
 
-Built with pure HTML/CSS, deployed on Vercel, and designed for **trust, speed, and conversion**.
+Built with pure HTML/CSS, hosted on **GitHub Pages**, and designed for **trust, speed, and WhatsApp-first service delivery**.
 
 ---
 
 ## 🔑 Core Features
 
-- ✅ **12 clean permalinks** via `vercel.json` (no `.html` extensions)  
-- ✅ **Mobile-responsive**, <1s load time, GA4-tracked  
-- ✅ **Human-first workflow**: All services delivered via WhatsApp  
-- ✅ **Secure payments**: USDT (TRC-20 only) — wallet verified on Tronscan  
-- ✅ **Full leadership transparency**: CEO + Operations Manager bios with direct contacts  
-- ✅ **Local credibility**: Fujairah-based, serving all Emirates (Dubai, Abu Dhabi, Sharjah)
+- ✅ **Zero JS, zero dependencies** — fast, secure, accessible  
+- ✅ **Mobile-optimized**, <1s load time, GA4-tracked (`G-TE72W7Q3E3`)  
+- ✅ **Bilingual support**: English + Arabic interfaces for GCC users  
+- ✅ **Human-reviewed compliance**: No AI-only guesses — real experts validate every invoice  
+- ✅ **Secure payments**: TRC-20 USDT only (wallet verified on Tronscan)  
+- ✅ **Leadership transparency**: CEO + Operations Manager bios with direct contacts  
+- ✅ **Pan-GCC reach**: Serving UAE (all Emirates) and KSA (Vision 2030-aligned)
 
 ---
 
-## 📁 Key Pages
+## 📁 Key Compliance Tools
 
-| Page | URL | Purpose |
+| Tool | URL | Purpose |
 |--|--|--|
-| Homepage | `/` | Omni-journey hub |
-| Tours | `/tours` | Desert, city & coastal experiences |
-| Compliance Audit | `/audit` | $49 USDT FTA risk assessment |
-| Golden Visa | `/golden-visa` | Residency concierge ($299+) |
-| Leadership | `/leadership` | Team bios + direct WhatsApp |
-| Location | `/location` | Google Maps embed + GMB link |
-| Safety Center | `/safety-center` | Privacy Policy, Terms, payment security |
+| **UAE VAT Fix** | [`/uae-fix`](https://almasatourism.org/uae-fix) | Fix FTA-rejected invoices in <24h |
+| **KSA ZATCA Fix** | [`/zatca-fix`](https://almasatourism.org/zatca-fix) | Validate Phase 2 e-invoices (QR, XML, fields) |
+| **Golden Visa Support** | `/golden-visa` | Residency pathway guidance ($299+) |
+| **Leadership** | `/leadership` | Team bios + direct WhatsApp access |
 
-> 💡 **Micro-SaaS Engine**: The `/audit` page uses **Tally.so form `rjarEo`** to capture leads → auto-reply via WhatsApp → manual delivery in 24h.
+> 💡 **Workflow**: User submits via Tally → gets auto WhatsApp reply → human expert delivers fix in 24h.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework**: None (pure static HTML/CSS)  
-- **Hosting**: Vercel (with custom domain: `almasatourism.org`)  
+- **Hosting**: GitHub Pages (`almasatourism.org`)  
 - **Analytics**: Google Analytics 4 (`G-TE72W7Q3E3`)  
-- **Forms**: Tally.so (`https://tally.so/r/rjarEo`)  
-- **Routing**: Clean URLs via `vercel.json` rewrites  
+- **Forms**: Tally.so (UAE: `rjarEo`, plus dedicated forms for `uae-fix` & `zatca-fix`)  
+- **Routing**: Clean permalinks via GitHub Pages (no `.html` in URLs)
 
-No JavaScript, no build step, no bloat — just fast, reliable, and ownable.
+No build step. No bloat. Fully ownable.
 
 ---
 
@@ -53,6 +51,8 @@ No JavaScript, no build step, no bloat — just fast, reliable, and ownable.
 
 - **CEO (UAE)**: [+971 58 123 8100](https://wa.me/971581238100)  
 - **Operations Manager**: [+971 52 208 0536](https://wa.me/971522080536)  
-- **Business Email**: [info@almasatourism.org](mailto:info@almasatourism.org)  
+- **Business Emails**:  
+  - General: `info@almasatourism.org`  
+  - Compliance: `zatca@almasatourism.org`
 
-> ℹ️ This project is owned and architected by a strategic IP partner. All brand strategy, compliance workflows, and omni-agency design are proprietary.
+> ℹ️ This project is owned and architected by **Maalik Consultant Plus**. All compliance workflows, IP, and omni-agency strategy are proprietary.
