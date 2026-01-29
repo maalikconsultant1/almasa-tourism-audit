@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="UAE VAT Invoice Fix – Human-Reviewed FTA Compliance Validation. Got your invoice rejected by the UAE Federal Tax Authority (FTA)? Our experts validate every field against FTA standards in under 24 hours. Built for freelancers, e-commerce sellers, and consultancies. Bilingual support (English & Arabic).">
+  <!-- Extended Description (Human-readable summary of page purpose) -->
+  <meta name="description" content="UAE VAT Invoice Fix – Human-Reviewed FTA Compliance Validation. Got your invoice rejected by the UAE Federal Tax Authority (FTA)? Our experts validate every field against FTA standards in under 24 hours. Built for freelancers, e-commerce sellers, and consultancies preparing Golden Visa applications. Verify your business name, TRN format, and emirate details against your FTA e-Services portal record before submission.">
   <title>UAE VAT Invoice Fix – Maalik Consultant Plus</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fff; color: #333; }
@@ -12,7 +13,6 @@
     h3 { margin-top: 0; color: #e74c3c; }
     label { display: block; margin: 10px 0; cursor: pointer; }
     input[type="radio"] { margin-right: 8px; }
-    .arabic { font-family: "Segoe UI", Tahoma, sans-serif; direction: rtl; text-align: right; margin-top: 12px; color: #555; background: #f0f8ff; padding: 12px; border-radius: 6px; }
     .qr-section { text-align: center; margin: 30px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; }
     .footer-links { text-align: center; margin-top: 20px; color: #7f8c8d; }
     .footer-links a { color: #3498db; text-decoration: none; margin: 0 10px; }
@@ -42,6 +42,51 @@
     </label>
   </div>
 
+  <!-- NEW: Pre-Validation Questions (Based on Governance Insights) -->
+  <div class="question">
+    <h3>🔍 Pre-Validation Check (Reduce Rejection Risk)</h3>
+    <p>Please confirm these critical details:</p>
+    
+    <label>
+      <input type="radio" name="name_match" value="yes" required> 
+      My business name EXACTLY matches my FTA e-Services record (including spacing/punctuation)
+    </label><br>
+    <label>
+      <input type="radio" name="name_match" value="no"> 
+      It does not match
+    </label><br>
+    <label>
+      <input type="radio" name="name_match" value="unsure"> 
+      I’m not sure
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="trn_format" value="yes" required> 
+      My TRN is 15 continuous digits (e.g., 123456789012345 — no dashes/spaces)
+    </label><br>
+    <label>
+      <input type="radio" name="trn_format" value="no"> 
+      It contains dashes, spaces, or letters
+    </label><br>
+    <label>
+      <input type="radio" name="trn_format" value="unsure"> 
+      I’m not sure
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="emirate_included" value="yes" required> 
+      My supplier address includes the emirate (e.g., “Dubai”, “Abu Dhabi”)
+    </label><br>
+    <label>
+      <input type="radio" name="emirate_included" value="no"> 
+      It does not include the emirate
+    </label><br>
+    <label>
+      <input type="radio" name="emirate_included" value="unsure"> 
+      I’m not sure
+    </label>
+  </div>
+
   <!-- Tally Form Embed -->
   <iframe src="https://tally.so/r/ODXpKM" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="UAE VAT Invoice Fix"></iframe>
 
@@ -62,17 +107,19 @@
     <a href="/">Back to Home</a>
   </div>
 
-  <!-- FAQs (English Only) -->
+  <!-- Updated FAQs (English Only) -->
   <div class="faq">
     <h3>❓ Frequently Asked Questions</h3>
     <p><strong>Q: Do I need to install anything?</strong><br>
-       A: No — just upload your invoice and pay via TRC-20 USDT bank transfer (UAE).</p>
+       A: No — just upload your invoice and pay via TRC-20 USDT.</p>
     <p><strong>Q: How long does it take?</strong><br>
        A: 24 hours from payment confirmation.</p>
     <p><strong>Q: Can I get a refund?</strong><br>
        A: Yes — if we can’t review your invoice due to format issues.</p>
     <p><strong>Q: Is this official FTA approval?</strong><br>
        A: No — this is a human-reviewed compliance check to help you avoid fines. Final approval is with FTA.</p>
+    <p><strong>Q: Where can I verify my FTA-registered business details?</strong><br>
+       A: Log in to the <a href="https://eservices.tax.gov.ae" target="_blank">FTA e-Services portal</a> — your invoice must match this record exactly.</p>
   </div>
 </body>
 </html>
