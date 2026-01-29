@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="KSA ZATCA Invoice Fix – Human-Reviewed E-Invoicing Compliance for Phase 2. Is your ZATCA e-invoice at risk of rejection? Our certified reviewers verify every element against ZATCA’s technical specifications within 24 hours. Designed for Saudi freelancers, SaaS providers, and SMEs. Bilingual support (العربية / English).">
+  <!-- Extended Description (Human-readable summary of page purpose) -->
+  <meta name="description" content="KSA ZATCA Invoice Fix – Human-Reviewed E-Invoicing Compliance for Phase 2. Is your ZATCA e-invoice at risk of rejection? Our certified reviewers verify every element against ZATCA’s technical specifications within 24 hours. Designed for Saudi freelancers, SaaS providers, and SMEs scaling under Vision 2030. Validate your Arabic legal name against MoI Commercial Registration, ensure timestamp includes milliseconds (.000), and confirm QR code integrity before submission.">
   <title>إصلاح فاتورة الزكاة والضريبة – مع مالك كونسلtant بلس</title>
   <style>
     body { font-family: "Segoe UI", Tahoma, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fff; color: #333; direction: rtl; text-align: right; }
@@ -41,6 +42,51 @@
     </label>
   </div>
 
+  <!-- NEW: Pre-Validation Questions (Based on Governance Insights) -->
+  <div class="question">
+    <h3>🔍 فحص ما قبل الإرسال (قلل خطر الرفض)</h3>
+    <p>يرجى تأكيد هذه التفاصيل الحرجة:</p>
+    
+    <label>
+      <input type="radio" name="arabic_name_match" value="yes" required> 
+      اسمي القانوني العربي يطابق تمامًا سجل السجل التجاري في وزارة التجارة
+    </label><br>
+    <label>
+      <input type="radio" name="arabic_name_match" value="no"> 
+      لا يتطابق
+    </label><br>
+    <label>
+      <input type="radio" name="arabic_name_match" value="unsure"> 
+      لست متأكدًا
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="timestamp_format" value="yes" required> 
+      الطابع الزمني يحتوي على مللي ثانية (مثال: `2026-01-30T14:30:00.000+03:00`)
+    </label><br>
+    <label>
+      <input type="radio" name="timestamp_format" value="no"> 
+      لا يحتوي على مللي ثانية
+    </label><br>
+    <label>
+      <input type="radio" name="timestamp_format" value="unsure"> 
+      لست متأكدًا
+    </label><br><br>
+
+    <label>
+      <input type="radio" name="qr_regenerated" value="yes" required> 
+      تم توليد رمز الاستجابة السريعة (QR) بعد تصحيح البيانات
+    </label><br>
+    <label>
+      <input type="radio" name="qr_regenerated" value="no"> 
+      لم يتم توليده بعد
+    </label><br>
+    <label>
+      <input type="radio" name="qr_regenerated" value="unsure"> 
+      لست متأكدًا
+    </label>
+  </div>
+
   <!-- Tally Form Embed -->
   <iframe src="https://tally.so/r/yP4LX4" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="KSA ZATCA Invoice Fix"></iframe>
 
@@ -61,17 +107,19 @@
     <a href="/">العودة إلى الصفحة الرئيسية</a>
   </div>
 
-  <!-- FAQs (Arabic Only) -->
+  <!-- Updated FAQs (Arabic Only) -->
   <div class="faq">
     <h3>❓ الأسئلة الشائعة</h3>
     <p><strong>س: هل أحتاج لتثبيت أي شيء؟</strong><br>
-       ج: لا — فقط ارفع فاتورتك وادفع عبر تحويل بنكي TRC-20 USDT (المملكة العربية السعودية).</p>
+       ج: لا — فقط ارفع فاتورتك وادفع عبر TRC-20 USDT.</p>
     <p><strong>س: كم يستغرق الإصلاح؟</strong><br>
        ج: 24 ساعة من تأكيد الدفع.</p>
     <p><strong>س: هل يمكنني استرداد المبلغ؟</strong><br>
        ج: نعم — إذا لم نتمكن من مراجعة فاتورتك بسبب مشاكل التنسيق.</p>
     <p><strong>س: هل هذا موافقة رسمية من الزكاة والضريبة؟</strong><br>
        ج: لا — هذه مراجعة بشرية للتأكد من الامتثال وتجنب الغرامات. الموافقة النهائية من هيئة الزكاة والضريبة (ZATCA).</p>
+    <p><strong>س: أين يمكنني التحقق من اسمي القانوني العربي؟</strong><br>
+       ج: تحقق من <a href="https://mc.gov.sa" target="_blank">بوابة وزارة التجارة (السجل التجاري)</a> — يجب أن يتطابق اسم الفاتورة مع هذا السجل تمامًا.</p>
   </div>
 </body>
 </html>
