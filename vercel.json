@@ -12,7 +12,12 @@
     { "source": "/audit", "destination": "/audit.html" },
     { "source": "/vat", "destination": "/audit.html" },
     { "source": "/golden-visa", "destination": "/golden-visa.html" },
-    { "source": "/thank-you", "destination": "/thank-you.html" }
+    { "source": "/thank-you", "destination": "/thank-you.html" },
+
+    // 👇 ADD THESE THREE LINES:
+    { "source": "/uae-fix", "destination": "/uae-fix/index.html" },
+    { "source": "/zatca-fix", "destination": "/zatca-fix/index.html" },
+    { "source": "/iac-scan", "destination": "/iac-scan/index.html" }
   ],
   "cleanUrls": true
 }
