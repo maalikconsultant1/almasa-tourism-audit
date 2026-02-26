@@ -1,28 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALMASA Tourism — GCC Compliance</title>
-  <meta name="description" content="Human-reviewed VAT fixes for UAE & KSA | IaC compliance scans | TRC-20 USDT">
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
-    h1 { color: #d32f2f; }
-    ul { padding-left: 20px; }
-    li { margin: 8px 0; }
-  </style>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+ <!-- ✅ EXTENDED DESCRIPTION & METADATA (NotebookLM Aligned) -->
+ <!-- Strategy: Step 1 - Build the Pipeline (Functional Foundation) -->
+ 
+ <!-- 1. SEO Meta Description (Search Engines: Google, Bing) -->
+ <meta name="description" content="Maalik AI Compliance Suite: Human-reviewed ZATCA & FTA validation in <24h. Also: ALMASA Tourism for bespoke UAE journeys. Ex-STC founded. WhatsApp delivery." />
+ <meta name="keywords" content="ZATCA Compliance, FTA VAT Fix, UAE Tourism, AI Automation, LEAP 2026, GCC Compliance, Maalik Consultant Plus, ALMASA Tourism, Ex-STC" />
+ <meta name="author" content="Fazal Malik, Maalik Consultant Plus" />
+ <meta name="robots" content="index, follow" />
+ <link rel="canonical" href="https://almasatourism.org" />
+
+ <!-- 2. Open Graph / Facebook / LinkedIn (Social Sharing) -->
+ <meta property="og:type" content="website" />
+ <meta property="og:url" content="https://almasatourism.org" />
+ <meta property="og:title" content="Maalik AI Compliance Suite | GCC Compliance + ALMASA Tourism" />
+ <meta property="og:description" content="Human-reviewed compliance at AI speed for UAE/KSA (ZATCA, FTA, IAC-Scan) + Premium ALMASA Tourism experiences. Built for LEAP 2026. <24h delivery via WhatsApp. Ex-STC founder." />
+ <meta property="og:image" content="https://almasatourism.org/og-image.jpg" />
+ <meta property="og:site_name" content="Maalik AI Compliance Suite" />
+ <meta property="og:locale" content="en_US" />
+
+ <!-- 3. Twitter Card (Twitter/X Sharing) -->
+ <meta name="twitter:card" content="summary_large_image" />
+ <meta name="twitter:url" content="https://almasatourism.org" />
+ <meta name="twitter:title" content="Maalik AI Compliance Suite | GCC Compliance + ALMASA Tourism" />
+ <meta name="twitter:description" content="Human-reviewed compliance at AI speed for UAE/KSA + Premium ALMASA Tourism experiences. Built for LEAP 2026. <24h delivery via WhatsApp." />
+ <meta name="twitter:image" content="https://almasatourism.org/og-image.jpg" />
+
+ <!-- 4. Internal Code Documentation (For Future Edits) -->
+ <!-- 
+    PROJECT: Maalik AI Compliance Suite + ALMASA Tourism
+    VERSION: 1.0 (Merged Compliance-First + Tourism Secondary)
+    HOSTING: Vercel (via GitHub)
+    DOMAIN: almasatourism.org
+    STRATEGY: NotebookLM Step 1 (Build the Pipeline)
+    WORKFLOW: Tally → n8n → Claude → Human Review → WhatsApp (<24h)
+    PROTECTED PATHS: /uae-fix, /zatca-fix, /iac-scan (Do Not Delete)
+    CONTACT: zatca@almasatourism.org (Compliance) | info@almasatourism.org (Tourism)
+    LAST UPDATE: 2026-02-26
+  -->
+
+ <title>Maalik AI Compliance Suite | GCC Compliance + ALMASA Tourism</title>
+ <meta name="theme-color" content="#0b1220" />
+ 
+ <!-- Google Analytics 4 (Readdy AI) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE72W7Q3E3"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   gtag('config', 'G-TE72W7Q3E3');
+ </script>
+
+ <style>
+  /* Kodee Base Theme (Excellent - Keep All) */
+  :root{
+   --bg:#0b1220; --card:#0f1a33; --text:#eaf0ff; --muted:#b6c3e6;
+   --line:rgba(255,255,255,.12); --accent:#7dd3fc; --accent2:#a78bfa;
+   --shadow: 0 10px 30px rgba(0,0,0,.35);
+   --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+   margin:0;
+   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+   color:var(--text);
+   background:
+    radial-gradient(1200px 500px at 20% -10%, rgba(125,211,252,.22), transparent 60%),
+    radial-gradient(1000px 500px at 90% 0%, rgba(167,139,250,.20), transparent 60%),
+    linear-gradient(180deg, #070b14, var(--bg));
+   line-height:1.55;
+  }
+  a{color:inherit}
+  .wrap{max-width:980px; margin:0 auto; padding:28px 18px 54px}
+  .topbar{
+   display:flex; align-items:center; justify-content:space-between; gap:12px;
+   padding:10px 0 18px; border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; flex-direction:column; gap:2px}
+  .brand strong{font-size:14px; letter-spacing:.2px}
+  .brand span{font-size:12px; color:var(--muted)}
+  .pill{
+   display:inline-flex; align-items:center; gap:8px;
+   padding:8px 10px; border:1px solid var(--line); border-radius:999px;
+   background:rgba(255,255,255,.04);
+   font-size:12px; color:var(--muted);
+   white-space:nowrap;
+  }
+
+  .hero{padding:34px 0 18px}
+  h1{
+   margin:0 0 10px;
+   font-size:clamp(28px, 4.2vw, 44px);
+   line-height:1.1;
+   letter-spacing:-.6px;
+  }
+  .subtitle{
+   margin:0 0 18px;
+   color:var(--muted);
+   font-size:clamp(14px, 2vw, 16px);
+   max-width:68ch;
+  }
+  .trust{
+   display:flex; flex-wrap:wrap; gap:10px;
+   margin:16px 0 0;
+  }
+  .trust .tag{
+   padding:8px 10px;
+   border:1px solid var(--line);
+   border-radius:999px;
+   background:rgba(255,255,255,.04);
+   font-size:13px;
+   color:var(--text);
+  }
+
+  .grid{
+   margin-top:18px;
+   display:grid;
+   grid-template-columns:repeat(12, 1fr);
+   gap:14px;
+  }
+  .card{
+   grid-column: span 12;
+   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+   border:1px solid var(--line);
+   border-radius:var(--radius);
+   box-shadow:var(--shadow);
+   padding:16px;
+  }
+  .card h2{margin:0 0 8px; font-size:16px}
+  .card p{margin:0; color:var(--muted); font-size:14px}
+  .card a{
+   display:flex; align-items:center; justify-content:space-between; gap:12px;
+   text-decoration:none;
+   padding:14px 14px;
+   border-radius:14px;
+   border:1px solid var(--line);
+   background:rgba(0,0,0,.14);
+   transition: transform .08s ease, border-color .12s ease, background .12s ease;
+   margin-top:12px;
+  }
+  .card a:hover{transform: translateY(-1px); border-color: rgba(125,211,252,.45); background:rgba(125,211,252,.06)}
+  .card a:focus{outline:2px solid rgba(125,211,252,.55); outline-offset:2px}
+  .arrow{color:var(--accent); font-weight:600}
+  .cols{
+   grid-column: span 12;
+   display:grid;
+   grid-template-columns:repeat(12, 1fr);
+   gap:14px;
+  }
+  .mini{
+   grid-column: span 12;
+   padding:16px;
+   border-radius:var(--radius);
+   border:1px solid var(--line);
+   background:rgba(255,255,255,.03);
+  }
+  .mini h3{margin:0 0 8px; font-size:14px}
+  .mini ul{margin:0; padding-left:18px; color:var(--muted); font-size:14px}
+  .mini li{margin:6px 0}
+  .workflow{
+   display:flex; flex-wrap:wrap; gap:8px;
+   margin-top:10px;
+   color:var(--muted);
+   font-size:13px;
+  }
+  .workflow span{
+   padding:7px 10px;
+   border:1px dashed rgba(255,255,255,.18);
+   border-radius:999px;
+   background:rgba(0,0,0,.12);
+  }
+
+  /* ✨ ADDED: Tourism Section Styles */
+  .tourism-section {
+   margin-top: 40px;
+   padding: 24px;
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+   background: linear-gradient(180deg, rgba(167,139,250,.08), rgba(125,211,252,.05));
+  }
+  .tourism-section h2 {
+   margin: 0 0 12px;
+   font-size: 18px;
+   color: var(--accent2);
+  }
+  .tourism-section p {
+   margin: 0 0 16px;
+   color: var(--muted);
+   font-size: 14px;
+  }
+  .tourism-links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+  }
+  .tourism-links a {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   padding: 8px 14px;
+   border: 1px solid var(--line);
+   border-radius: 999px;
+   background: rgba(255,255,255,.04);
+   font-size: 13px;
+   text-decoration: none;
+   transition: border-color .12s ease, background .12s ease;
+  }
+  .tourism-links a:hover {
+   border-color: rgba(167,139,250,.45);
+   background: rgba(167,139,250,.08);
+  }
+  .tourism-tagline {
+   font-style: italic;
+   color: var(--accent);
+   font-size: 13px;
+   margin-top: 8px;
+  }
+
+  footer{
+   margin-top:24px;
+   padding-top:18px;
+   border-top:1px solid var(--line);
+   color:var(--muted);
+   font-size:13px;
+   display:flex; flex-direction:column; gap:10px;
+  }
+  .contact{
+   display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .contact a{
+   text-decoration:none;
+   display:inline-flex; align-items:center; gap:8px;
+   padding:10px 12px;
+   border-radius:999px;
+   border:1px solid var(--line);
+   background:rgba(255,255,255,.03);
+  }
+  .contact a:hover{border-color: rgba(167,139,250,.45); background:rgba(167,139,250,.06)}
+  .smallprint{opacity:.9}
+
+  /* ✨ ADDED: Pricing tag + LEAP badge styles */
+  .price-tag {
+   font-size: 12px;
+   color: var(--accent);
+   font-weight: 500;
+   margin-top: 4px;
+  }
+  .leap-badge {
+   background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+   color: white;
+   padding: 4px 10px;
+   border-radius: 999px;
+   font-size: 11px;
+   font-weight: 600;
+   letter-spacing: 0.3px;
+   display: inline-flex;
+   align-items: center;
+   gap: 4px;
+  }
+
+  @media (min-width: 760px){
+   .card{padding:18px}
+   .cols .mini:nth-child(1){grid-column: span 6}
+   .cols .mini:nth-child(2){grid-column: span 6}
+  }
+ </style>
 </head>
 <body>
-  <h1>ALMASA Tourism — GCC Compliance Partner</h1>
-  <p>SECP-Registered | Human-reviewed validation for UAE & KSA</p>
-  
-  <ul>
-    <li><a href="/uae-fix">UAE VAT Invoice Fix</a></li>
-    <li><a href="/zatca-fix">KSA ZATCA Phase 2 Fix</a></li>
-    <li><a href="/iac-scan">GCC Cloud IaC Compliance Scan</a></li>
-  </ul>
+ <div class="wrap">
+ <div class="topbar">
+ <div class="brand">
+ <strong>Maalik AI Compliance Suite</strong>
+ <span>GCC Compliance Guide + ALMASA Tourism</span>
+ </div>
+ <!-- ✨ ADDED: LEAP 2026 Badge -->
+ <div class="pill">
+  <span class="leap-badge">🏆 LEAP 2026</span>
+  • Human-reviewed • <24h
+ </div>
+ </div>
 
-  <p>Payments: TRC-20 USDT only<br>
-  WhatsApp: <a href="https://wa.me/923005473874">+92 300 5473874</a></p>
+ <!-- COMPLIANCE HERO (Primary Focus) -->
+ <section class="hero" aria-labelledby="hero-title">
+ <h1 id="hero-title">Human-reviewed compliance at AI speed</h1>
+ <p class="subtitle">
+  AI speed meets regulatory safety. FTA-aligned VAT fixes, ZATCA Phase 2 validation, and cloud compliance — delivered in &lt;24 hours via WhatsApp.
+ </p>
+
+ <div class="trust" aria-label="Trust signals">
+ <div class="tag">Ex-STC • 8 Years KSA</div>
+ <div class="tag">Vision 2030 Aligned</div>
+ <div class="tag">ZATCA Phase 2 Ready</div>
+ <div class="tag">FTA Cabinet Resolution No. 106</div>
+ </div>
+ </section>
+
+ <!-- COMPLIANCE SERVICES (4 MVP Cards) -->
+ <section class="grid" aria-label="Compliance Services">
+ <div class="card">
+ <h2>Compliance Services</h2>
+ <p>Choose a track to get started:</p>
+
+ <!-- UAE-Fix -->
+ <a href="https://wa.me/923005473874?text=Hi%20Fazal%2C%20I%20need%20UAE-Fix%20%28FTA%20invoice%20validation%29.%20Please%20review%3A%20%E2%9C%93%20TRN%20format%20%E2%9C%93%20Legal%20name%20%E2%9C%93%20Region%20compliance.%20Pricing%3A%20SAR%2FAED%2049-400" 
+    aria-label="UAE-Fix (FTA)"
+    target="_blank" rel="noopener">
+ <span>
+  <strong>🇦🇪 UAE-Fix</strong>
+  <span style="color:var(--muted)">— FTA Invoice Validation</span>
+  <div class="price-tag">SAR/AED 49–400 • &lt;24h</div>
+ </span>
+ <span class="arrow">→</span>
+ </a>
+
+ <!-- ZATCA-Fix -->
+ <a href="https://wa.me/923005473874?text=Hi%20Fazal%2C%20I%20need%20ZATCA-Fix%20%28KSA%20Phase%202%20e-invoice%29.%20Please%20check%3A%20%E2%9C%93%20Arabic%20name%20%E2%9C%93%20QR%20code%20%E2%9C%93%20Timestamp.%20Pricing%3A%20SAR%2FAED%2049-400"
+    aria-label="ZATCA-Fix (KSA Phase 2)"
+    target="_blank" rel="noopener">
+ <span>
+  <strong>🇸🇦 ZATCA-Fix</strong>
+  <span style="color:var(--muted)">— KSA Phase 2 E-Invoice</span>
+  <div class="price-tag">SAR/AED 49–400 • &lt;24h</div>
+ </span>
+ <span class="arrow">→</span>
+ </a>
+
+ <!-- IAC-Scan -->
+ <a href="https://wa.me/923005473874?text=Hi%20Fazal%2C%20I%20need%20IAC-Scan%20%28Cloud%20IaC%20compliance%29.%20Please%20review%20my%20Terraform%2FCloudFormation%20files%20for%20FTA%2FZATCA%2FNCA%20alignment.%20Pricing%3A%20SAR%2FAED%2049-400"
+    aria-label="IAC-Scan (Cloud)"
+    target="_blank" rel="noopener">
+ <span>
+  <strong>☁️ IAC-Scan</strong>
+  <span style="color:var(--muted)">— Cloud Infrastructure Compliance</span>
+  <div class="price-tag">SAR/AED 49–400 • &lt;24h</div>
+ </span>
+ <span class="arrow">→</span>
+ </a>
+
+ <!-- VAT Audit -->
+ <a href="https://wa.me/923005473874?text=Hi%20Fazal%2C%20I%20need%20a%20VAT%20Tool%20Health%20Audit.%20Please%20assess%20my%20current%20VAT%20compliance%20setup%20and%20identify%20gaps.%20Pricing%3A%20SAR%2FAED%2049-400"
+    aria-label="VAT Audit"
+    target="_blank" rel="noopener">
+ <span>
+  <strong>📊 VAT Audit</strong>
+  <span style="color:var(--muted)">— Full Setup Assessment</span>
+  <div class="price-tag">SAR/AED 49–400 • &lt;24h</div>
+ </span>
+ <span class="arrow">→</span>
+ </a>
+
+ <p style="margin-top:16px; font-size:12px; color:var(--muted)">
+  💳 Payment: USDT (TRC-20) or bank transfer (AED/SAR). Pakistan-based • Serving UAE • KSA
+ </p>
+ </div>
+
+ <!-- Workflow + Trust -->
+ <div class="cols">
+ <div class="mini">
+ <h3>How It Works</h3>
+ <div class="workflow" aria-label="Workflow">
+ <span>Tally</span><span>→</span><span>n8n</span><span>→</span><span>Claude AI</span><span>→</span><span>Human 12-Point Review</span><span>→</span><span>WhatsApp</span>
+ </div>
+ <p style="margin:10px 0 0; color:var(--muted); font-size:13px">
+  ✨ AI structural pass + human judgment = audit-ready output in &lt;24h.
+ </p>
+ </div>
+
+ <div class="mini">
+ <h3>Why Founders Trust Us</h3>
+ <ul>
+ <li>✅ 12-point human review checklist (Notion)</li>
+ <li>✅ Claude 3.5 custom audit prompts</li>
+ <li>✅ UTM-tracked conversions (Short.io)</li>
+ <li>✅ WhatsApp-first delivery (95% GCC penetration)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ✨ ADDED: ALMASA Tourism Section (Secondary, Elegant) -->
+ <section class="tourism-section" aria-label="Also Offering: ALMASA Tourism">
+ <h2>🌴 Also Offering: ALMASA Tourism</h2>
+ <p>Premium UAE travel experiences for international and local travelers. Bespoke itineraries, luxury tours, and Golden Visa support across Dubai, Abu Dhabi, Sharjah, and Fujairah.</p>
+ 
+ <div class="tourism-links">
+  <a href="/about">About ALMASA</a>
+  <a href="/vip-services">VIP Services</a>
+  <a href="/tours">Tour Packages</a>
+  <a href="/leadership">Leadership</a>
+  <a href="/location">Map Location</a>
+  <a href="/safety-center">Safety Center</a>
+  <a href="/contact">Contact Tourism</a>
+ </div>
+ <p class="tourism-tagline">"Crafting Your Bespoke UAE Journey"</p>
+ <p style="margin-top:12px; font-size:12px; color:var(--muted)">
+  📧 info@almasatourism.org | 📱 +971 52 208 0536 | USDT (TRC-20) Accepted
+ </p>
+ </section>
+
+ <footer>
+ <div class="contact" aria-label="Contact">
+ <a href="mailto:zatca@almasatourism.org">✉️ Compliance: zatca@almasatourism.org</a>
+ <a href="mailto:info@almasatourism.org">✉️ Tourism: info@almasatourism.org</a>
+ <a href="https://wa.me/923005473874" target="_blank" rel="noopener">📱 +92 300 5473874</a>
+ </div>
+ <div class="smallprint">
+  © <span id="y"></span> Maalik Consultant Plus (est. 2018) • SECP-Registered • Ex-STC
+ </div>
+ <div class="smallprint" style="margin-top:8px; font-size:11px; opacity:0.8">
+  Compliance documentation based on FTA/ZATCA public guidelines — not tax advice. Final regulatory approval rests with authorities.
+ </div>
+ </footer>
+ </div>
+
+ <script>
+ document.getElementById('y').textContent = new Date().getFullYear();
+ </script>
 </body>
 </html>
